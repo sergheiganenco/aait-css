@@ -6,29 +6,91 @@
     <title>Form Selectors</title>
  
 </head>
-<body>
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <title>Demo CSS3</title>
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body class="page">
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="active">
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <img height="50px" src="data:image/png;base64,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" />
+        </div>
+    </header>
+    <div class="main">
+        <article id="post-5946">
+            <section id="post-5946-header">
+                <h1 class="entry-title">CSS Class from  Scratch</h1>
+                <div class="entry-meta">
+                    <span class="meta-prep">Posted on October 30, 2014</span>
+                    <span class="meta-sep">by</span>
+                    <span class="author">Mr. Nice Guy</span>
+                </div>
+            </section>
+            <section class="entry-content">
+                <p>
+                    <img alt="html5" title="html5" src="http://taxpremium.com/wp-content/uploads/2014/03/Gaming-Computer-Setup.jpg" width="200" />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus varius ex in egestas. Ut ut cursus neque, et commodo mauris. Phasellus in arcu sapien. Ut sit amet orci quis justo porta sagittis vel condimentum sapien. Morbi posuere dapibus tempor. Nam libero magna, consectetur id nulla non, aliquet feugiat tellus. Curabitur iaculis nisl eu dolor facilisis consequat. Praesent ut libero faucibus, porta magna eget, vehicula ligula. Morbi quis arcu eget sem porttitor volutpat in condimentum magna. Phasellus in justo egestas, viverra sem a, congue ex. Sed quis neque at ex aliquam vulputate. Nulla bibendum nibh quis feugiat elementum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <a href="http://msn.com">msn website</a>
 
-    <section id="main">
-        <form action="http://wilder.azurewebsites.net/echo" method="POST" class="bordered-image simple-form">
-            <label for="searchPhrase">Search Phrase:</label>
-            <input type="text" name="searchPhrase" id="searchPhrase" /><br />
-            <input type="checkbox" name="useStars" id="useStars" checked="true" />
-            <label for="useStars">Use Stars?</label><br />
-            <label for="langChoice">Language:</label>
-            <select name="langChoice" id="langChoice">
-                <option>All</option>
-                <option>JavaScript</option>
-                <option selected>C#</option>
-                <option>Java</option>
-                <option>Ruby</option>
-            </select>
-            <br />
-            <input type="submit" value="search" />
-        </form>
+                </p>
 
-    </section>
+            </section>
+            <section class="entry-content" id="bookList">
+                <p>Here is a list of Books I just read</p>
+                <ul>
+                    <li>Intuition Pumps</li>
+                    <li>The Killing Floor</li>
+                    <li>The Road to Antietem</li>
+                    <li>Timequake</li>
+                    <li>A Clash of Kings</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+    <aside class="sidebar">
+        <section class="aside-header">
+            <h2>About HTML5</h2>
+        </section>
 
+        <section class="aside-body">
+            <a href="http://geek.com">geek.com</a>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce porta lorem rhoncus, rhoncus orci sed, auctor nisl.
+            Etiam rutrum risus tellus, eu interdum tortor porttitor ut.
+            Praesent et nisl tincidunt lorem suscipit laoreet vel non turpis.
+            Vivamus hendrerit vel neque at varius.
+            Donec tempus, sapien at fermentum pulvinar, orci mauris tempor dolor,
+            non mattis magna lectus et augue.
+            Vivamus ut diam enim. Fusce nec dui arcu.
+            Duis luctus odio ligula, vitae pharetra nisi cursus ut.
+            Nam id neque pulvinar tortor laoreet laoreet sed at sem.
+        </section>
+    </aside>
 
+    <div style="clear: both"></div>
+    <footer class="footer">
+        <p>Copyright 2014 Mr Nice Guy</p>
+    </footer>
 </body>
+</html>
+
 </html>
