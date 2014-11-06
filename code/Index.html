@@ -2,64 +2,122 @@
 
 <html lang="en">
 <head>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
     <meta charset="utf-8" />
-    <title>Demo CSS3</title>
+
     <link href="css/site.css" rel="stylesheet" />
+    <link href="css/css3.css" rel="stylesheet" />
+    <title>Demo CSS3</title>
+
+
 </head>
-<body>
-    <article id="post-5946">
-        <section id="post-5946-header">
-            <h1 class="entry-title">CSS Class from  Scratch</h1>
-            <div class="entry-meta">
-                <span class="meta-prep">Posted on October 30, 2014</span>
-                <span class="meta-sep">by</span>
-                <span class="author">Nice Guy</span>
-            </div>
-        </section>
-        <section class="entry-content">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <a href="http://msn.com">msn website</a>
-                <img alt="html5" title="html5" src="http://taxpremium.com/wp-content/uploads/2014/03/Gaming-Computer-Setup.jpg" width="200" />
-            </p>
-            <p>
-                <a href="http://www.html5rocks.com/en/">HTML5</a>is the markup language of the web that has taken the world by storm.
-                In this “from scratch” course, I demonstrate all you need to know about what’s new in HTML5 to get started
-                creating world-class web sites
-            </p>
-
-        </section>
-        <section class="entry-content" id="bookList">
-            <p>Here is a list of Books I just read</p>
-            <ul>
-                <li>Intuition Pumps</li>
-                <li>The Killing Floor</li>
-                <li>The Road to Antietem</li>
-                <li>Timequake</li>
-                <li>A Clash of Kings</li>
+<body class="page">
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="active">
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
             </ul>
-        </section>
-        <aside>
-            <section class="aside-header">
-                <h2>About HTML5</h2>
+        </nav>
+        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxfbgVJslaO4oFnbUlD5_Enm4Wf552SxkpUlKrNiAhudSRpAYa" />
+    </header>
+    <div class="main">
+        <article id="post-5946">
+            <section id="post-5946-header">
+                <h1 class="entry-title">CSS Class from  Scratch</h1>
+                <div class="entry-meta">
+                    <span class="meta-prep">Posted on October 30, 2014</span>
+                    <span class="meta-sep">by</span>
+                    <span class="author">Mr. Nice Guy</span>
+                </div>
             </section>
+            <section class="entry-content">
+                <p>
+                    <img alt="html5" title="html5" src="http://taxpremium.com/wp-content/uploads/2014/03/Gaming-Computer-Setup.jpg" width="200" />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus varius ex in egestas. Ut ut cursus neque, et commodo mauris. Phasellus in arcu sapien. Ut sit amet orci quis justo porta sagittis vel condimentum sapien. Morbi posuere dapibus tempor. Nam libero magna, consectetur id nulla non, aliquet feugiat tellus. Curabitur iaculis nisl eu dolor facilisis consequat. Praesent ut libero faucibus, porta magna eget, vehicula ligula. Morbi quis arcu eget sem porttitor volutpat in condimentum magna. Phasellus in justo egestas, viverra sem a, congue ex. Sed quis neque at ex aliquam vulputate. Nulla bibendum nibh quis feugiat elementum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <a href="http://msn.com">msn website</a>
 
-            <section class="aside-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Fusce porta lorem rhoncus, rhoncus orci sed, auctor nisl.
-                Etiam rutrum risus tellus, eu interdum tortor porttitor ut.
-                Praesent et nisl tincidunt lorem suscipit laoreet vel non turpis.
-                Vivamus hendrerit vel neque at varius.
-                Donec tempus, sapien at fermentum pulvinar, orci mauris tempor dolor,
-                non mattis magna lectus et augue.
-                Vivamus ut diam enim. Fusce nec dui arcu.
-                Duis luctus odio ligula, vitae pharetra nisi cursus ut.
-                Nam id neque pulvinar tortor laoreet laoreet sed at sem.
+                </p>
+
             </section>
-        </aside>
-    </article>
+            <section class="entry-content" id="bookList">
+                <p>Here is a list of Books I just read</p>
+                <ul>
+                    <li>Intuition Pumps</li>
+                    <li>The Killing Floor</li>
+                    <li>The Road to Antietem</li>
+                    <li>Timequake</li>
+                    <li>A Clash of Kings</li>
+                </ul>
+            </section>
+        </article>
+        <section id="testSection">
+            <div>Orest is a <mark>NICE</mark>  guy</div>
+        </section>
+        <section id="contact">
+            <hgroup>
+                <h1>Contact Data</h1>
+                <h2>You have data. We want it.</h2>
+            </hgroup>
+            <form id="contactform">
+
+                <input tabindex="1" class="data" id="name" name="name"
+                       type="text" required title="full name" />
+
+
+                <input tabindex="2" class="data" id="email" name="email"
+                       type="email" placeholder="name@domain.com" required title="name@domain.com" />
+
+                <input tabindex="3" class="data" id="site" name="site"
+                       type="url" placeholder="http://www.yoursite.com" title="URL must begin with http://" />
+
+
+                <input tabindex="4" class="data" id="phone" name="phone"
+                       type="tel" placeholder="(###) ###-####" pattern="\(\d\d\d\) \d\d\d\-\d\d\d\d" />
+
+                <input tabindex="5" class="data" id="rating" name="rating" title="Rating from 0 to 10"
+                       type="range" min="0" max="10" value="5" />
+
+                <input tabindex="6" class="linkButton" id="submit" name="submit"
+                       type="submit" value="Send Data" />
+            </form>
+            <div style="clear: both"></div>
+
+            <div class="space"></div>
+
+        </section>
+    </div>
+    <aside class="sidebar">
+        <section class="aside-header">
+            <h2>About HTML5</h2>
+        </section>
+
+        <section class="aside-body">
+            <a href="http://geek.com">geek.com</a>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce porta lorem rhoncus, rhoncus orci sed, auctor nisl.
+            Etiam rutrum risus tellus, eu interdum tortor porttitor ut.
+            Praesent et nisl tincidunt lorem suscipit laoreet vel non turpis.
+            Vivamus hendrerit vel neque at varius.
+            Donec tempus, sapien at fermentum pulvinar, orci mauris tempor dolor,
+            non mattis magna lectus et augue.
+            Vivamus ut diam enim. Fusce nec dui arcu.
+            Duis luctus odio ligula, vitae pharetra nisi cursus ut.
+            Nam id neque pulvinar tortor laoreet laoreet sed at sem.
+        </section>
+    </aside>
+
+    <div style="clear: both"></div>
     <footer class="footer">
-        <p>Copyright 2014 Mr. Nice Guy</p>
+        <p>Copyright 2014 Mr Nice Guy</p>
     </footer>
 </body>
 </html>
