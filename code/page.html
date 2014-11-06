@@ -2,34 +2,46 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <link href="css/positioning.css" rel="stylesheet" />
 </head>
 <body>
-    <link href="css/positioning.css" rel="stylesheet" />
-    <header>This is Header</header>
-    <nav>
-        <ul class="menu">
-            <li class="active">
-                <a href="/index.html">Home</a>
-            </li>
-            <li>
-                <a href="/contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="/about.html">About</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="page">
+        <header>
+            This is Header
+            <nav>
+                <ul class="menu">
+                    <li class="active">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main">
+            <section>
+                <h1>Header for section 1</h1>
+                <div id="div-1">
+                    <p><strong>p tag in div-1</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <div id="div-1a"><strong>div-1a, div 1a</strong> Lorem ipsum dolor sit amet</div>
+                    <div id="div-1b"><strong>div-1b | div-1b</strong> Nulla efficitur, tellus at tincidunt finibus, nisi tellus fringilla neque, in finibus sem dolor ac felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin erat ac nibh viverra, quis efficitur augue congue</div>
+                    <div id="div-1c"></div>
+                </div>
 
-    <section>
-        <h1>Header for section 1</h1>
-        section 1
-    </section>
-    <section>
-        <h1>Header for section 1</h1>
-        section 2
-    </section>
-    <article>article</article>
-    <aside>aside</aside>
-    <footer>footer</footer>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula at ante fermentum laoreet. Nulla efficitur, tellus at tincidunt finibus, nisi tellus fringilla neque, in finibus sem dolor ac felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sollicitudin erat ac nibh viverra, quis efficitur augue congue. Cras pharetra molestie massa</div>
+            </section>
+            <section>
+                <h1>Header for section 1</h1>
+                section 2
+            </section>
+            <article>article</article>
+            <aside>aside</aside>
+        </div>
+        <footer>footer</footer>
+    </div>
 </body>
 </html>

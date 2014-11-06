@@ -21,7 +21,7 @@ article {
 }
 
 nav {
-    background-color: #404040  ;
+    background-color: #404040;
     padding: 8px;
     margin-bottom: 4px;
 }
@@ -32,3 +32,10 @@ aside {
     padding: 8px;
     margin-bottom: 4px;
 }
+
+div{ background-color: white;margin: 0;padding: 0 }
+
+#div-1{ background-color: #ff6a00; }
+#div-1a{ background-color: #808080; }
+#div-1b { background-color: #b6b6bf}
+/*---------------------------------------------------------*/
